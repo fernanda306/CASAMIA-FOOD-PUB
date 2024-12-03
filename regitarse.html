@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CASAMIA FOOD PUB</title>
-    <link rel="stylesheet" href="/css/estilo.css">
+    <title>CASAMIA FOOD-pub</title>
+    <link rel="stylesheet" href="/css/registrarse.css">
 </head>
 <body>
     <!-- Barra de navegación -->
     <header>
         <nav>
             <div class="logo">
-                <img src="/Imagenes/CASAMIA.jpeg" alt="Logo casamia"><a href="index.html"></a>
+                <img src="/Imagenes/CASAMIA.jpeg" alt="Logo casamia">
             </div>
 
             <input type="checkbox" id="check">
@@ -28,8 +28,7 @@
                         <li><a href="mapa.html">Mapa</a></li>
                     </ul>
                 </li>
-
-                <li><a href="regitarse.html">ingresar</a></li>
+                <li><a href="regitarse.html">Ingresar</a></li>
                 <li><a href="#">Carta</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="#">reservaciones</a></li>
@@ -39,39 +38,25 @@
         </nav>
     </header>
 
-    <!-- Banner principal -->
-    <section class="banner">
-        <div class="banner-content">
-            <h1>CASAMIA</h1>
-            <h4>FOOD-PUB</h4>
-            <p>Disfruta de nuestras deliciosas promociones y menús exclusivos.</p>
-         
-        </div>
-    </section>
 
-    <!-- Sección de promociones -->
-    <section class="promotions">
-        <h2>¡Promociones Exclusivas!</h2>
-        <div class="promo-cards">
-            <div class="promo-card">
-                <img src="/Imagenes/krispy pork.jpeg" alt="Promoción 1" height="245px">
-                <h3>crispy pork</h3>
-                <p>Disfruta con tu amigo, ¡y ahorra!</p>
-            </div>
-            <div class="promo-card">
-                <img src="/Imagenes/combo kids.jpeg" alt="Promoción 2">
-                <h3>Combo kids</h3>
-                <p>Un para que tus niños lo disfruten.</p>
-            </div>
-            <div class="promo-card">
-                <img src="/Imagenes/chingona.jpeg" alt="Promoción 3">
-                <h3>chingona</h3>
-                <p>¿Te gustan los sabores más picantes?</p>
-            </div>
+    <div class="container">
+        <div class="inicio">
+            <h2>Iniciar sesión</h2>
+            <form id="inicio2">
+                <div class="grupo">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" placeholder="Ingresa tu usuario" required>
+                </div>
+                <div class="grupo2">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit" class="btn">Iniciar sesión</button>
+                <p class="error-message" id="error-message"></p>
+            </form>
         </div>
-    </section>
-
-    <!-- Footer -->
+    </div>
+    
     <footer>
         <h5>Horarios de atención</h5>
         <h6>Lunes a viernes</h6>
@@ -85,7 +70,8 @@
             <img src="Imagenes/facebook.png" width="30px" height="30px">
         </div>
     </footer>
+ 
 
-    <script src="JavaScript/estilo.js"></script>
+    <script src="/JavaScript/inicio.js"></script>
 </body>
 </html>
